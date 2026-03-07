@@ -86,6 +86,14 @@ Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
 To https://github.com/MS-9web/financeproject.git
    742974d..07c0406  main -> main
 ```
+***5.Checking the status after pushing the changes***
+```
+D:\Mishty\DATA ENGINEER\AttackMode\financeproj\financeproject>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+```
 ***How to go one commit back?***
 ```
 $ git reset --soft HEAD~1
