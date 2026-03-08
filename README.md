@@ -96,6 +96,20 @@ nothing to commit, working tree clean
 ```
 ***How to go one commit back?***
 ```
+**1st scenario: Changes are not staged
+git restore <file>
+**2nd scenario: Changes are staged but not commited
+git restore --staged <file>
+git restore <file>  
+**3rd scenario: Changes are committed
+git log   -->shows all the commits and most recent is at the top, HEAD points to it
+copy the hash value and run this command:
+git reset <hash value>
+git reset head~1
+
+Alternative option: git reset --hard <hash value of prev commit>
+This will do herd delete of the commit.  Meaning changes are not there in local git as well.  If we run git status then we won't find unstaged commits  
+---------------------------------------------------------------------------
 $ git reset --soft HEAD~1
 
 $ git status
